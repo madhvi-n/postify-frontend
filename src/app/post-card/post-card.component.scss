@@ -1,0 +1,60 @@
+.post-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px auto;
+  background-color: #ffffff;
+  max-width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.author-info {
+  display: flex;
+  justify-content: space-between;
+  flex: auto;
+}
+
+.author-name {
+  font-weight: bold;
+  color: #e51111; /* Reddit orange-red color */
+}
+
+.posted-on {
+  color: #777;
+}
+
+.post-content {
+  margin-top: 10px;
+  color: #444;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #292929; /* Dark gray for titles */
+}
+
+button {
+  background: none;
+  border: none;
+  color: #e51111; /* Reddit orange-red color */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+button:hover {
+  color: #e51111; /* Slightly darker shade on hover */
+}

@@ -1,0 +1,14 @@
+<div class="post-card">
+  <div class="post-header">
+    <img src="https://cdn0.iconfinder.com/data/icons/communication-456/24/account_profile_user_contact_person_avatar_placeholder-256.png" alt="Author Avatar" class="avatar">
+    <div class="author-info">
+      <p class="author-name">{{ post.author.name ? post.author.name : 'John Doe' }}</p>
+      <p class="posted-on">{{ post.createdAt | date: 'medium' }}</p>
+    </div>
+  </div>
+  <div class="post-content">
+    <h2>{{ post.title }}</h2>
+    <p [innerHTML]="truncateContent(post.content)"></p>
+    <button (click)="toggleReadMore()">{{ showReadMore ? 'Read Less' : 'Read More' }}</button>
+  </div>
+</div>
